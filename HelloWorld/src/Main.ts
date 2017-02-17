@@ -89,21 +89,23 @@ class Main extends BaseScene {
      * Create a game scene
      */
     private createGameScene() {
+        var scene = new MenuScene();
+        this.addChild(scene);
+
         var button = new eui.Button();
         button.width = 100;
         button.height = 40;
+        button.x = 200;
+        button.y = 200;
+        button.skinName = GameConst.NormalBtnSkin;
         button.label = "切换";
-        button.skinName = "ButtonSkin.exml";
         this.addChild(button);
 
         button.addEventListener(egret.TouchEvent.TOUCH_TAP,this.btnTouchHandler,this);
-
-        var scene1 = new FightScene();
-        this.addChild(scene1);
     }
 
     private btnTouchHandler(event:egret.TouchEvent):void {
-        var scene = new MenuScene();
+        var scene = new FightScene();
         this.changeScene(scene);
     }
 

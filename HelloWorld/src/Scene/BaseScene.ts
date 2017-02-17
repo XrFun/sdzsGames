@@ -24,4 +24,8 @@ class BaseScene extends egret.DisplayObjectContainer {
         result.texture = texture;
         return result;
     }
+
+    public getStage(){
+        return this.stage;
+    }
 }

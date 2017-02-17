@@ -13,9 +13,9 @@ class FightScene extends BaseScene {
     private init() {
         let sky = this.createBitmapByName("bg_jpg");
         this.addChild(sky);
-        let stageW = this.stage.stageWidth;
-        let stageH = this.stage.stageHeight;
-        sky.width = stageW;
-        sky.height = stageH;
+        //let stageW = this.getStage().stageWidth;
+        //let stageH = this.getStage().stageHeight;
+        //sky.width = stageW;
+        //sky.height = stageH;
     }
 }
