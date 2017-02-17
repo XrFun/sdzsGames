@@ -6,4 +6,22 @@
  */
 class BaseScene extends egret.DisplayObjectContainer {
 
+    public currentScene: egret.DisplayObjectContainer;
+
+    public changeScene(scene: egret.DisplayObjectContainer) {
+        this.stage.removeChild(this.currentScene);
+        this.currentScene = scene;
+        this.stage.addChild(this.currentScene);
+    }
+
+    public getCurrentScene() {
+        return this.currentScene;
+    }
+
+    public createBitmapByName(name: string) {
+        let result = new egret.Bitmap();
+        let texture: egret.Texture = RES.getRes(name);
+        result.texture = texture;
+        return result;
+    }
 }

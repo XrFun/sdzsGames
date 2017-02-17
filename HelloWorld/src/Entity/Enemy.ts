@@ -5,7 +5,7 @@
 /**
  * 敌人类,BOSS系文哥.
  */
-class LoadingUI extends egret.Sprite {
+class Entity extends egret.Sprite {
     public constructor() {
         super();
         this.init();
