@@ -1,5 +1,5 @@
 
-class Main extends egret.DisplayObjectContainer {
+class Main extends BaseScene {
 
     /**
      * 加载进度界面
@@ -89,7 +89,22 @@ class Main extends egret.DisplayObjectContainer {
      * Create a game scene
      */
     private createGameScene() {
-     
+        var button = new eui.Button();
+        button.width = 100;
+        button.height = 40;
+        button.label = "切换";
+        button.skinName = "ButtonSkin.exml";
+        this.addChild(button);
+
+        button.addEventListener(egret.TouchEvent.TOUCH_TAP,this.btnTouchHandler,this);
+
+        var scene1 = new FightScene();
+        this.addChild(scene1);
+    }
+
+    private btnTouchHandler(event:egret.TouchEvent):void {
+        var scene = new MenuScene();
+        this.changeScene(scene);
     }
 
 }

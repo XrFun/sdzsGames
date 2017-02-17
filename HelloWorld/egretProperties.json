@@ -19,6 +19,9 @@
       "name": "tween"
     },
     {
+      "name": "eui"
+    },
+    {
       "name": "res"
     }
   ]
