@@ -8,8 +8,15 @@ var game_file_list = [
 	"libs/modules/tween/tween.js",
 	"libs/modules/res/res.js",
 	"polyfill/promise.js",
+	"bin-debug/Scene/BaseScene.js",
+	"bin-debug/Controller/BaseController.js",
+	"bin-debug/Entity/Enemy.js",
+	"bin-debug/Entity/Tower.js",
 	"bin-debug/LoadingUI.js",
 	"bin-debug/Main.js",
+	"bin-debug/Model/DataManager.js",
+	"bin-debug/Scene/FightScene.js",
+	"bin-debug/Scene/MenuScene.js",
 	//----auto game_file_list end----
 ];
 
