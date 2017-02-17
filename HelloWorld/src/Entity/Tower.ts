@@ -5,7 +5,7 @@
  * 防守塔
  * TODO 目前不太明朗是否继承Sprite,后面有问题再更改
  */
-class LoadingUI extends egret.Sprite {
+class Tower extends egret.Sprite {
     public constructor() {
         super();
     }
