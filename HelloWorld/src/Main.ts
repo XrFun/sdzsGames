@@ -105,7 +105,8 @@ class Main extends BaseScene {
     }
 
     private btnTouchHandler(event:egret.TouchEvent):void {
-        var scene = new FightScene();
+        // var scene = new FightScene();
+        var scene = new MenuScene();
         this.changeScene(scene);
     }
 

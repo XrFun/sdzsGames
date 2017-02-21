@@ -5,7 +5,8 @@
  * 这是一个 Scene 基类所有公共方法都抽象都这个类里面实现.
  */
 class BaseScene extends egret.DisplayObjectContainer {
-
+    public stageW: number = egret.MainContext.instance.stage.stageWidth;
+    public stageH: number = egret.MainContext.instance.stage.stageHeight;
     public currentScene: egret.DisplayObjectContainer;
 
     public changeScene(scene: egret.DisplayObjectContainer) {
@@ -25,7 +26,7 @@ class BaseScene extends egret.DisplayObjectContainer {
         return result;
     }
 
-    public getStage(){
+    public getStage() {
         return this.stage;
     }
 }

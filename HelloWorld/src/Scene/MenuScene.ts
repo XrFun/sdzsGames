@@ -11,9 +11,20 @@ class MenuScene extends BaseScene {
     }
 
     private init() {
-        let icon = this.createBitmapByName("egret_icon_png");
-        this.addChild(icon);
-        icon.x = 26;
-        icon.y = 33;
+        let bg = this.createBitmapByName("menu_bg_jpg");
+        this.addChild(bg);
+
+        let startBtn = this.createBitmapByName("start_png");
+        this.addChild(startBtn);
+        startBtn.anchorOffsetX = startBtn.width / 2;
+        startBtn.anchorOffsetY = startBtn.height / 2;
+        startBtn.x = this.stageW * .4;
+        startBtn.y = this.stageH * .7;
+        startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.startGame,this);
+        startBtn.touchEnabled = true;
+    }
+    private startGame(evt:egret.TouchEvent){
+        let scene = new FightScene();
+        this.changeScene(scene);
     }
 }
