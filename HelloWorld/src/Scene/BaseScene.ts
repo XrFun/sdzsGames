@@ -10,7 +10,9 @@ class BaseScene extends egret.DisplayObjectContainer {
     public currentScene: egret.DisplayObjectContainer;
 
     public changeScene(scene: egret.DisplayObjectContainer) {
-        this.stage.removeChild(this.currentScene);
+        if (this.currentScene) {
+            this.stage.removeChild(this.currentScene);
+        }
         this.currentScene = scene;
         this.stage.addChild(this.currentScene);
     }

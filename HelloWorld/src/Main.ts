@@ -90,7 +90,7 @@ class Main extends BaseScene {
      */
     private createGameScene() {
         var scene = new MenuScene();
-        this.addChild(scene);
+        this.changeScene(scene);
 
         var button = new eui.Button();
         button.width = 100;
