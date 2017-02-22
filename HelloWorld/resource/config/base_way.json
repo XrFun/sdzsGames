@@ -1,0 +1,13 @@
+{
+  "list": [
+    {
+      "id": 1,
+      "name": "1—1",
+      "points": "[{0,0},{100,0},{100,100}]",
+      "enemy_count": 6,
+      "enemy_group": 10,
+      "group_time": 30,
+      "hero_type": 1
+    }
+  ]
+}
