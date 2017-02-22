@@ -1,6 +1,6 @@
 {
 	"groups":[{
-			"keys":"bg_jpg,egret_icon_png,description_json,button_down_png,button_up_png,menu_bg_jpg,start_png,menu_png,playagain_png",
+			"keys":"bg_jpg,egret_icon_png,description_json,button_down_png,button_up_png,menu_bg_jpg,start_png,menu_png,playagain_png,scene1bg_jpg,scene2bg_jpg,enemy01_png,enemy02_png,enemy03_png,enemy04_png,hero1_json,hero1_png,hero2_json,hero2_png,hero3_json,hero3_png,hero4_json,hero4_png",
 			"name":"preload"
 		}],
 	"resources":[
@@ -48,6 +48,76 @@
 			"name":"playagain_png",
 			"type":"image",
 			"url":"assets/playagain.png"
+		},
+		{
+			"name":"scene1bg_jpg",
+			"type":"image",
+			"url":"assets/scene1bg.jpg"
+		},
+		{
+			"name":"scene2bg_jpg",
+			"type":"image",
+			"url":"assets/scene2bg.jpg"
+		},
+		{
+			"name":"enemy01_png",
+			"type":"image",
+			"url":"assets/enemy01.png"
+		},
+		{
+			"name":"enemy02_png",
+			"type":"image",
+			"url":"assets/enemy02.png"
+		},
+		{
+			"name":"enemy03_png",
+			"type":"image",
+			"url":"assets/enemy03.png"
+		},
+		{
+			"name":"enemy04_png",
+			"type":"image",
+			"url":"assets/enemy04.png"
+		},
+		{
+			"name":"hero1_json",
+			"type":"json",
+			"url":"enemy/hero1.json"
+		},
+		{
+			"name":"hero1_png",
+			"type":"image",
+			"url":"enemy/hero1.png"
+		},
+		{
+			"name":"hero2_json",
+			"type":"json",
+			"url":"enemy/hero2.json"
+		},
+		{
+			"name":"hero2_png",
+			"type":"image",
+			"url":"enemy/hero2.png"
+		},
+		{
+			"name":"hero3_json",
+			"type":"json",
+			"url":"enemy/hero3.json"
+		},
+		{
+			"name":"hero3_png",
+			"type":"image",
+			"url":"enemy/hero3.png"
+		},
+		{
+			"name":"hero4_json",
+			"type":"json",
+			"url":"enemy/hero4.json"
+		},
+		{
+			"name":"hero4_png",
+			"type":"image",
+			"url":"enemy/hero4.png"
 		}
 	]
 }
