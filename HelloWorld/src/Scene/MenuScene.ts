@@ -23,6 +23,7 @@ class MenuScene extends BaseScene {
         startBtn.addEventListener(egret.TouchEvent.TOUCH_TAP,this.startGame,this);
         startBtn.touchEnabled = true;
     }
+
     private startGame(evt:egret.TouchEvent){
         let scene = new FightScene();
         this.changeScene(scene);

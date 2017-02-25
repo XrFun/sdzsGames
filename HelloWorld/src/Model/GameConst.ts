@@ -15,5 +15,32 @@ GameConst.NormalBtnSkin =
             </e:Skin>`;
 
 
+/**
+ * 输出一个对象的所有属性值 [key:*, value:*]
+ * @param obj
+ */
+GameConst.logObject = function(obj) {
+    var str = GameConst.getObjText(obj);
+    console.log(str);
+};
+
+GameConst.getObjText = function(obj) {
+    var str = "";
+    for(var key in obj) {
+        if (typeof obj[key] === "function") {
+            continue;
+        }
+        if (obj[key] instanceof Array) {
+            str += "\n[key:" + key + ",value:" + GameConst.getObjText(obj[key]) + "]";
+        }
+        else if (obj[key] instanceof Object) {
+            str += GameConst.getObjText(obj[key]);
+        }
+        else {
+            str += "\n[key:" + key + ",value:" + obj[key] + "]";
+        }
+    }
+    return str;
+};
 //GameConst.MaxWidth = egret.MainContext.instance.stage.stageWidth;
 //GameConst.MaxHeight = egret.MainContext.instance.stage.stageHeight;
